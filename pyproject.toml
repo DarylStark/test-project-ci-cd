@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "test-project-ci-cd"
+version = "0.1.0"
+description = "test project for github actions"
+authors = ["Daryl Stark <daryl@dstark.nl>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "test_project_ci_cd", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.1.1"
+ruff = "^0.3.4"
+mypy = "^1.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
