@@ -8,6 +8,6 @@ jobs:
      name: default workflow
      uses: DarylStark/development_toolchain/.github/workflows/workflow-python-project.yml@issue-2/ci-cd-pipelines
      with:
-        python-versions: "3.8"
-        project-type: "PYTHON_POETRY"
-        test-suite: "PYTEST"
+        python-versions: '"3.8"'
+        project-type: 'PYTHON_POETRY'
+        test-suite: 'PYTEST'
