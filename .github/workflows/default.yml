@@ -1,0 +1,11 @@
+---
+name: default CI/CD pipeline
+on:
+  push:
+
+jobs:
+   default:
+     name: default workflow
+     uses: DarylStark/development_toolchain/github_actions/workflow.yml@issue-2/ci-cd-pipelines
+     with:
+        project-type: "PYTHON_POETRY"
