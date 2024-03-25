@@ -9,3 +9,4 @@ jobs:
      uses: DarylStark/development_toolchain/.github/workflows/workflow-python-project.yml@issue-2/ci-cd-pipelines
      with:
         project-type: "PYTHON_POETRY"
+        test-suite: "PYTEST"
