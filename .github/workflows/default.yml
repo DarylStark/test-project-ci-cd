@@ -6,6 +6,6 @@ on:
 jobs:
    default:
      name: default workflow
-     uses: DarylStark/development_toolchain/.github/workflows/default.yml@issue-2/ci-cd-pipelines
+     uses: DarylStark/development_toolchain/.github/workflows/workflow-python-project.yml@issue-2/ci-cd-pipelines
      with:
         project-type: "PYTHON_POETRY"
