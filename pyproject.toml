@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "test-project-ci-cd"
-version = "0.1.0"
+version = "0.1.1"
 description = "test project for github actions"
 authors = ["Daryl Stark <daryl@dstark.nl>"]
 license = "MIT"
@@ -33,4 +33,5 @@ push = false
 [tool.bumpver.file_patterns]
 "pyproject.toml" = [
     'current_version = "{version}"',
+    'version = "{version}"',
 ]
