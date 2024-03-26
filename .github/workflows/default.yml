@@ -6,8 +6,7 @@ on:
 jobs:
    default:
      name: default workflow
-     uses: DarylStark/development_toolchain/.github/workflows/workflow-python-project.yml@issue-2/ci-cd-pipelines
+     uses: DarylStark/development_toolchain/.github/workflows/workflow-python-library.yml@issue-2/ci-cd-pipelines
      with:
         python-versions: '["3.8","3.9","3.10","3.11","3.12"]'
-        project-type: 'PYTHON_POETRY'
-        test-suite: 'PYTEST'
+        main-python-version: '3.12'
