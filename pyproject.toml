@@ -16,7 +16,26 @@ python = "^3.9"
 pytest = "^8.1.1"
 ruff = "^0.3.4"
 mypy = "^1.9.0"
+bumpver = "^2023.1129"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.bumpver]
+current_version = "0.1.0"
+version_pattern = "MAJOR.MINOR.PATCH[-TAG]"
+commit_message = "Version {new_version}"
+commit = true
+tag = false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+]
+"README.md" = [
+    "{version}",
+    "{pep440_version}",
+]
+
