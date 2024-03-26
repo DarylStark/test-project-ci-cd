@@ -10,5 +10,3 @@ jobs:
      with:
         python-versions: '["3.12"]'
         main-python-version: '3.12'
-        bumpver-to-final: false
-        deploy: true
