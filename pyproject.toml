@@ -43,3 +43,6 @@ push = false
 
 [tool.pytest.ini_options]
 addopts = ['--cov=test_project_ci_cd', '--cov-report=html', '--cov-report=lcov', '--cov-report=xml']
+
+[tool.coverage.run]
+relative_files = true
