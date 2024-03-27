@@ -5,6 +5,10 @@ __version__ = "0.1.0"
 session = None
 
 
+class TPException(Exception):
+    """Custom exception for test project."""
+
+
 def login(username: str, password: str):
     """Test login function."""
     global session
@@ -20,7 +24,7 @@ def logout():
     global session
     try:
         if not session:
-            raise Exception("No session found")
+            raise TPException("No session found")
         session = None
-    except:
+    except TPException:
         print("No session found")
