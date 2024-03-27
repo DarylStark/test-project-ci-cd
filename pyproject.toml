@@ -35,3 +35,6 @@ push = false
     'current_version = "{version}"',
     'version = "{version}"',
 ]
+"sonar-project.properties" = [
+    'sonar.projectVersion={version}'
+]
