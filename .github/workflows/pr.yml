@@ -2,7 +2,7 @@
 on:
   pull_request_target:
     branches:
-      - master
+      - dev
 
 jobs:
    default:
