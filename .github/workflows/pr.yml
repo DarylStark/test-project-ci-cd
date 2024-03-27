@@ -1,0 +1,16 @@
+---
+on:
+  pull_request_target:
+    branches:
+      - master
+
+jobs:
+   default:
+     name: default workflow
+     uses: DarylStark/development_toolchain/.github/workflows/workflow-python-library.yml@issue-2/ci-cd-pipelines
+     with:
+        python-versions: '["3.11"]'
+        main-python-version: '3.11'
+     secrets:
+       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+       PROJECT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
