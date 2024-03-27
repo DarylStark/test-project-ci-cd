@@ -3,3 +3,7 @@ __pycache__
 .venv
 .pytest_cache
 .mypy_cache
+# Coverage reports
+.coverage*
+coverage.*
+htmlcov
