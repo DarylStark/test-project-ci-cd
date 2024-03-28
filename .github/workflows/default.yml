@@ -8,6 +8,9 @@ on:
       - issue/*
   pull_request:
     types: [opened, synchronize, reopened]  # Needed to make sure PRs are tested
+    branches: 
+      - dev
+      - main
 
 jobs:
    default:
