@@ -15,8 +15,7 @@ def login(username: str, password: str):
     if username == "admin" and password == "admin1":
         session = "admin"
         return True
-    else:
-        return False
+    return False
 
 
 def logout():
