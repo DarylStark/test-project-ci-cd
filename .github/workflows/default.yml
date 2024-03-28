@@ -5,8 +5,9 @@ on:
     branches:
       - dev
       - main
+      - issue/*
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened]  # Needed to make sure PRs are tested
 
 jobs:
    default:
