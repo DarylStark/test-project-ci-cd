@@ -2,6 +2,12 @@
 name: default CI/CD pipeline
 on:
   push:
+    branches:
+      - dev
+      - main
+      - issue/*
+  pull_request:
+    types: [opened, synchronize, reopened]  # Needed to make sure PRs are tested
 
 jobs:
    default:
