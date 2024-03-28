@@ -11,8 +11,8 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
-pydantic = "^2.0.0"
-fastapi = "0.110.0"
+pydantic = "1.6.2"
+fastapi = "0.90.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.1.1"
