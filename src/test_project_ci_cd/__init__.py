@@ -1,4 +1,7 @@
-"""Test package for CI/CD."""
+"""Test package for CI/CD.
+
+Contains only testcode.
+"""
 
 __version__ = "0.1.0"
 
