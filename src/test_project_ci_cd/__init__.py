@@ -36,3 +36,12 @@ def is_session_active():
     """Check if session is active."""
     global session
     return session is not None
+
+
+def print_username():
+    """Print username."""
+    global session
+    if session:
+        print(session)
+    else:
+        print("No session found")
