@@ -1,0 +1,25 @@
+---
+name: Linting and testing for development
+on:
+  push:
+    branches:
+      - dev*
+      - issue-[0-9]*/.*
+      - issue/.*
+      - feature-[0-9]*/.*
+      - feature/.*
+      - renovate/.*
+  pull_request:
+    types: [opened, synchronize, reopened]  # Needed to make sure PRs are tested
+      branch:
+        dev
+
+jobs:
+   default:
+     name: default workflow
+     uses: DarylStark/development_toolchain/.github/workflows/workflow-python-library.yml@issue-2/ci-cd-pipelines
+     with:
+        python-versions: '["3.12"]'
+        main-python-version: '3.12'
+     secrets:
+       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

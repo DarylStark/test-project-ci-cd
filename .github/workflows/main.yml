@@ -1,15 +1,8 @@
 ---
-name: default CI/CD pipeline
+name: Linting and testing for development
 on:
   push:
     branches:
-      - dev
-      - main
-      - issue/*
-  pull_request:
-    types: [opened, synchronize, reopened]  # Needed to make sure PRs are tested
-    branches: 
-      - dev
       - main
 
 jobs:
@@ -19,6 +12,7 @@ jobs:
      with:
         python-versions: '["3.12"]'
         main-python-version: '3.12'
-        new-tag: 'final'
+        deliver-to-pypi: true
+        new-version-tag: final
      secrets:
        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
