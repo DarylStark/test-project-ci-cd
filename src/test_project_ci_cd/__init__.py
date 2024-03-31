@@ -30,3 +30,9 @@ def logout():
         session = None
     except TPException:
         print("No session found")
+
+
+def is_session_active():
+    """Check if session is active."""
+    global session
+    return session is not None
