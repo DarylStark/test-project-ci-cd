@@ -11,8 +11,8 @@ on:
       - renovate/.*
   pull_request:
     types: [opened, synchronize, reopened]  # Needed to make sure PRs are tested
-      branch:
-        dev
+    branches:
+      dev
 
 jobs:
    default:
