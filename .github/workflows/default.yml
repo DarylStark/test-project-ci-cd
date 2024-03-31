@@ -19,5 +19,6 @@ jobs:
      with:
         python-versions: '["3.12"]'
         main-python-version: '3.12'
+        new-tag: 'final'
      secrets:
        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
