@@ -4,7 +4,6 @@ on:
   push:
     branches-ignore:
       - 'main'
-      - 'renovate/**'
   pull_request:
     types: [opened, synchronize, reopened]  # Needed to make sure PRs are tested
     branches:
@@ -17,6 +16,5 @@ jobs:
      with:
         python-versions: '["3.12"]'
         main-python-version: '3.12'
-        deliver-to-pypi: false
      secrets:
        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
