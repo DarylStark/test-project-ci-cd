@@ -21,5 +21,6 @@ jobs:
      with:
         python-versions: '["3.12"]'
         main-python-version: '3.12'
+        deliver-to-pypi: false
      secrets:
        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
