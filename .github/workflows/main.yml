@@ -1,7 +1,9 @@
 ---
-name: default CI/CD pipeline
+name: Linting and testing for development
 on:
   push:
+    branches:
+      - main
 
 jobs:
    default:
@@ -10,5 +12,7 @@ jobs:
      with:
         python-versions: '["3.12"]'
         main-python-version: '3.12'
-        bumpver-to-final: false
-        deploy: true
+        deliver-to-pypi: true
+        new-version-tag: final
+     secrets:
+       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
