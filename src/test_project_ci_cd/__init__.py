@@ -3,6 +3,8 @@
 Contains only testcode.
 """
 
+from .calc import get_sum
+
 __version__ = "0.1.0"
 
 session = None
@@ -43,5 +45,6 @@ def print_username():
     global session
     if session:
         print(session)
+        print(get_sum(10, 20))
     else:
         print("No session found")
