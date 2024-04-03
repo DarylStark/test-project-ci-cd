@@ -12,9 +12,8 @@ jobs:
      with:
         python-versions: '["3.12"]'
         main-python-version: '3.12'
-        deliver-to-pypi: true
+        publish-to-pypi: true
         new-version-tag: final
-        update-dev: true
         run-container-lint: true
      secrets:
        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
