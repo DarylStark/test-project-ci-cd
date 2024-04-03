@@ -1,15 +1,19 @@
 FROM python:3.12-slim-bookworm
 
-RUN pip3 install poetry
+# Install dependencies
+RUN apt update -y && apt install -y && apt install -y python3-poetry
 
+# Creae and set working directory
 RUN mkdir -p /app/src
-
 WORKDIR /app/src
 
+# Copy project files
 COPY . .
 
-RUN poetry config virtualenvs.create false --local
-RUN poetry install --no-interaction
-RUN rm -rf /root/.cache/pypoetry
+# Install application
+RUN poetry config virtualenvs.create false --local && \
+    poetry install --no-interaction && \
+    rm -rf /root/.cache/pypoetry
 
+# Start the application
 CMD ["test_project"]
