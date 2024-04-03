@@ -15,5 +15,6 @@ jobs:
         deliver-to-pypi: true
         new-version-tag: final
         update-dev: true
+        run-container-lint: true
      secrets:
        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

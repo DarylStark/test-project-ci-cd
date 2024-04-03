@@ -17,5 +17,6 @@ jobs:
      with:
         python-versions: '["3.10","3.11","3.12"]'
         main-python-version: '3.12'
+        run-container-lint: true
      secrets:
        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
