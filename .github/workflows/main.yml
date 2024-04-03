@@ -10,7 +10,7 @@ jobs:
      name: default workflow
      uses: DarylStark/development_toolchain/.github/workflows/workflow-python-poetry.yml@issue-2/ci-cd-pipelines
      with:
-        python-versions: '["3.12"]'
+        python-versions: '["3.10","3.11","3.12"]'
         main-python-version: '3.12'
         publish-to-pypi: true
         new-version-tag: final
