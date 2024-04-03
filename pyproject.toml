@@ -48,3 +48,6 @@ addopts = ['--cov=test_project_ci_cd', '--cov-report=html', '--cov-report=lcov',
 
 [tool.coverage.run]
 relative_files = true
+
+[tool.poetry.scripts]
+test_project = 'test_project_ci_cd.__main__:main'
