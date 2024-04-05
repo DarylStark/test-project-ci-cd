@@ -16,5 +16,8 @@ def get_product(a: T, b: T) -> T:
 
 
 def get_quotient(a: T, b: T) -> float:
-    """Quotient."""
+    """Quotient.
+
+    Return quotient of a and b.
+    """
     return a / b
