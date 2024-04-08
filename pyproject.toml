@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "test-project-ci-cd"
-version = "0.6.0"
+version = "0.7.0-dev"
 description = "test project for github actions"
 authors = ["Daryl Stark <daryl@dstark.nl>"]
 license = "MIT"
@@ -27,7 +27,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.bumpver]
-current_version = "0.6.0"
+current_version = "0.7.0-dev"
 version_pattern = "MAJOR.MINOR.PATCH[-TAG]"
 commit_message = "Version {new_version}"
 commit = true
