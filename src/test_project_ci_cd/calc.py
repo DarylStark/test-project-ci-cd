@@ -21,3 +21,8 @@ def get_quotient(a: T, b: T) -> float:
     Return quotient of a and b.
     """
     return a / b
+
+
+def get_diff(a: T, b: T) -> T:
+    """Difference."""
+    return a - b
