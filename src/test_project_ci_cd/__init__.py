@@ -9,6 +9,8 @@ __version__ = "0.1.0"
 
 session = None
 
+ERROR_NO_SESSIONS_FOUND = "No session found"
+
 
 class TPException(Exception):
     """Custom exception for test project."""
@@ -28,10 +30,10 @@ def logout():
     global session
     try:
         if not session:
-            raise TPException("No session found")
+            raise TPException(ERROR_NO_SESSIONS_FOUND)
         session = None
     except TPException:
-        print("No session found")
+        print(ERROR_NO_SESSIONS_FOUND)
 
 
 def is_session_active():
@@ -47,4 +49,4 @@ def print_username():
         print(session)
         print(get_sum(10, 20))
     else:
-        print("No session found")
+        print(ERROR_NO_SESSIONS_FOUND)
