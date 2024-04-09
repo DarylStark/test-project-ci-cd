@@ -3,11 +3,10 @@ name: Linting and testing for development
 on:
   push:
     branches-ignore:
-      - 'main'
+      - main
   pull_request:
-    types: [opened, synchronize, reopened]  # Needed to make sure PRs are tested
+    types: [opened, synchronize, reopened]
     branches:
-      - dev
       - main
 
 jobs:
