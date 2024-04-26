@@ -5,6 +5,7 @@ on:
     branches-ignore:
       - main
       - container
+      - pypi
   pull_request:
     types: [opened, synchronize, reopened]
     branches:
