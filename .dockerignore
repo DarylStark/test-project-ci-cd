@@ -1,5 +1,5 @@
 .*
-Containerfile
+Dockerfile
 coverage.*
 dist/
 docs/
