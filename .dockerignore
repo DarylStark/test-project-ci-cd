@@ -1,0 +1,9 @@
+.*
+Dockerfile
+coverage.*
+dist/
+docs/
+htmlcov/
+renovate.json
+sonar-project.properties
+tests/

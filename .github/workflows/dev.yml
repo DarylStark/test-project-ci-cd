@@ -10,13 +10,13 @@ on:
       - main
 
 jobs:
-   default:
-     name: default workflow
-     uses: DarylStark/development_toolchain/.github/workflows/workflow-python-poetry.yml@issue-2/ci-cd-pipelines
-     with:
-        python-versions: '["3.10","3.11","3.12"]'
-        main-python-version: '3.12'
-        run-container-lint: true
-        extra-poetry-groups: "dev"
-     secrets:
-       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  default:
+    name: default workflow
+    uses: DarylStark/development_toolchain/.github/workflows/workflow-python-poetry.yml@issue-2/ci-cd-pipelines
+    with:
+      python-versions: '["3.10","3.11","3.12"]'
+      main-python-version: '3.12'
+      run-container-lint: true
+      extra-poetry-groups: "dev"
+    secrets:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
