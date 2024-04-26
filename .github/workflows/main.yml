@@ -10,13 +10,13 @@ jobs:
     name: default workflow
     uses: DarylStark/development_toolchain/.github/workflows/workflow-python-poetry.yml@issue-2/ci-cd-pipelines
     with:
-       python-versions: '["3.10","3.11","3.12"]'
-       main-python-version: '3.12'
-       publish-to-pypi: true
-       new-version-tag: final
-       run-container-lint: true
-       publish-container: true
-       container-tags: DarylStark/test-project-ci-cd:latest
+      python-versions: '["3.10","3.11","3.12"]'
+      main-python-version: '3.12'
+      publish-to-pypi: true
+      new-version-tag: final
+      run-container-lint: true
+      publish-container: true
+      container-tags: DarylStark/test-project-ci-cd:latest
     secrets:
       SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
