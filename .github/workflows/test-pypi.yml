@@ -13,6 +13,6 @@ jobs:
       python-versions: '["3.12"]'
       main-python-version: '3.12'
       publish-to-pypi: true
-      repository: testpypi
+      pypi-repository: testpypi
     secrets:
       PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
