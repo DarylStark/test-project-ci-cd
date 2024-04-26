@@ -6,11 +6,11 @@ on:
       - pypi
 
 jobs:
-   default:
-     name: default workflow
-     uses: DarylStark/development_toolchain/.github/workflows/workflow-python-poetry-test.yml@issue-2/ci-cd-pipelines
-     with:
-        python-versions: '["3.12"]'
-        main-python-version: '3.12'
-        publish-to-pypi: true
-
+  default:
+    name: default workflow
+    uses: DarylStark/development_toolchain/.github/workflows/workflow-python-poetry-test.yml@issue-2/ci-cd-pipelines
+    with:
+       python-versions: '["3.12"]'
+       main-python-version: '3.12'
+       publish-to-pypi: true
+    secrets:
