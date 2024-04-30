@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "test-project-ci-cd"
-version = "0.7.16"
+version = "0.7.17-dev"
 description = "test project for github actions"
 authors = ["Daryl Stark <daryl@dstark.nl>"]
 license = "MIT"
@@ -12,7 +12,7 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.9"
 pydantic = "2.7.1"
-fastapi = "0.110.2"
+fastapi = "0.110.3"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.1.1"
@@ -27,7 +27,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.bumpver]
-current_version = "0.7.16"
+current_version = "0.7.17-dev"
 version_pattern = "MAJOR.MINOR.PATCH[-TAG]"
 commit_message = "Version {new_version}"
 commit = true
